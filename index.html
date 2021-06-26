@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>
+
+            My Family Book
+        
+        </title>
+    </head>
+
+    <body>
+        <centre>
+
+            <h1>
+                My Family Book
+            </h1>
+
+            <img id="members" src="https://image.freepik.com/free-vector/cartoon-mother-carrying-boy-her-arms_29190-4543.jpg">
+
+           
+            <h2 id="name">Priyanka Mishra</h2>
+
+            
+            <button type="button" onclick="Change()">Next</button>
+
+            </centre>
+
+            <script>
+
+                var images=["https://image.freepik.com/free-vector/cartoon-mother-carrying-boy-her-arms_29190-4543.jpg","https://previews.123rf.com/images/jemastock/jemastock1806/jemastock180602409/102903968-cute-father-cartoon-vector-illustration-graphic-design.jpg","https://t3.ftcdn.net/jpg/02/62/72/10/360_F_262721041_9mNNRQadoz552DN2NTFNbGBHN14K9D58.jpg","https://t4.ftcdn.net/jpg/02/66/85/51/360_F_266855106_mmJPXHbTqzFwOGo7EdXJfiowZ77It0hV.jpg","https://cdn4.vectorstock.com/i/1000x1000/24/68/child-at-computer-cartoon-boy-learning-at-desk-vector-21642468.jpg"];
+
+                var names=["Priyanka Mishra/Mummy","Soubhagya Panda/Papa","Chandrashekhar Mishra/Grandfather","Ranjita Acharya/Grandmother","Me/Sharman Panda"];
+
+                var i=0;
+
+                function Change(){
+
+                    i++;
+
+                    family_memebers_array=4;
+
+                    if(i>family_memebers_array){
+
+                        i=0;
+                    
+                    }
+
+                    var updateImage=images[i];
+                    var updateNames=names[i];
+
+                    document.getElementById("members").src=updateImage;
+                    document.getElementById("name").innerHTML=updateNames;
+
+
+
+                }
+
+
+            </script>
+    </body>
+</html>
